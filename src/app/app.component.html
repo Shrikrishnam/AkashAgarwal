@@ -1,0 +1,22 @@
+<div class="logo">
+
+</div>
+<div class="navbar bg-primary">
+  <button class="btn btn-primary" (click)="landingpage()">Home</button><br>
+  <button class="btn btn-primary" (click)="placeAppointment()">Place Appointment</button><br>
+  <button class="btn btn-primary" (click)="viewAppointment()">View Appointment</button><br>
+  <button class="btn btn-primary" (click)="contactUspage()">Contact Us</button>
+</div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <button class="btn btn-dark" (click)="landingpage()">Home</button><br>
+  <button class="btn btn-dark" (click)="placeAppointment()">Place Appointment</button><br>
+  <button class="btn btn-dark" (click)="viewAppointment()">View Appointment</button><br>
+  <button class="btn btn-dark" (click)="contactUspage()">Contact Us</button>
+</div>
+
+<span style="font-size:30px;cursor:pointer;color:blue" (click)="openNav()">&#9776; menu</span>
+
+
+<router-outlet></router-outlet>
